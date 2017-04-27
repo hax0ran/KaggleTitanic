@@ -5,7 +5,7 @@ import java.io.*;
 public class survivedgenerator {
 	//This class replaced all the empty Survived slots from the test file with 0s. It also replaced any empty Embarked slots
 	//(the final attribute) with underscores (_).
-	//This was done before a decision was made to replace the empty Survived slots in the test data with ?'s (Weka's symbol
+	//This was done before the rationale was made to replace the empty Survived slots in the test data with ?'s (Weka's symbol
 	//for unknown or missing data).
 
     public static void main(String[] args) throws IOException {

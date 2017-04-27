@@ -3,7 +3,7 @@ import java.util.*;
 import java.io.*;
 
 public class survivedgenerator {
-	//This class replaced all the empty Survived slots from the test file with 0s. It also replaced any empty Embarked slots
+	//This class replaced all the empty Survived slots from the test file with ?s. It also replaced any empty Embarked slots
 	//(the final attribute) with underscores (_).
 	//This was done before the rationale was made to replace the empty Survived slots in the test data with ?'s (Weka's symbol
 	//for unknown or missing data).
@@ -27,7 +27,7 @@ public class survivedgenerator {
 		while ((line = reader.readLine()) != null)
 		{
 		  int index = line.indexOf(",");
-		  writer.write(line.substring(0,index)+",0"+line.substring(index,line.length())+"\n");
+		  writer.write(line.substring(0,index)+",?"+line.substring(index,line.length())+"\n");
 		  if(line.substring(line.length()-1,line.length()).equals(","))
 			  writer.write(line+"_");
 		}

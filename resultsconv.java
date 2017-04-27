@@ -16,7 +16,7 @@ public class resultsconv{
 		writer.write("PassengerId,Survived\n");
 		while ((line = reader.readLine()) != null)
 		{
-		  writer.write((Integer.parseInt(line.substring(0,line.indexOf(",")))+891)+line.substring(line.indexOf(","),line.indexOf(",")+1)+line.substring(line.indexOf(":")+1,line.length())+"\n");
+		  writer.write((Integer.parseInt(line.substring(0,line.indexOf(",")))+891)+","+line.substring(line.indexOf(":",8)+1,line.indexOf(":",8)+2)+"\n");
 		}
 		reader.close();
 		writer.close();

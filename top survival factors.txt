@@ -1,7 +1,8 @@
 1. pclass	1
 2. sex		female
-3. age		IF<8.378 THEN HIGH | IF>64 THEN LOW
-4. fare		>51
-5. embarked	C
-6. sibsp	1
-7. parch	1
+3. name   IF (female or royalty title) THEN HIGH | IF (title = "Mr") THEN LOW
+4. age		IF<8.378 THEN HIGH | IF>64 THEN LOW
+5. fare		>51
+6. embarked	C
+7. sibsp	1
+8. parch	1

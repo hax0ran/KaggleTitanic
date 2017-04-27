@@ -6,8 +6,7 @@ public class titleregex {
     public static void main(String[] args) throws IOException {
         //text file, should be opening in default text editor
 		//titleread.txt and testtitles.txt are two altered versions of the original test.csv and train.csv files; they have had all their spaces replaced with underscores ("_")
-		//and their empty values with "?". In addition, testtitles.txt has had a "0" placed in all entries in the "Survived" column, which is changed to all "?"'s in this
-		//program.
+		//and their empty values with "?".
 		List<String> result1 = readFile("C:\\Users\\M\\Desktop\\titleread.txt");
 		List<String> result2 = readFile("C:\\Users\\M\\Desktop\\testtitles.txt");
     }
